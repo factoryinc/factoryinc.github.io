@@ -3,7 +3,7 @@ import secondsToTime from '../utils/secondsToTime';
 import ProgressBar from './ProgressBar';
 import './tank.css';
 
-const BUILD_DURATION = 45;
+const BUILD_DURATION = 20;
 
 const Tank = ({ onTankTimerEnds }) => {
   const [seconds, setSeconds] = useState(BUILD_DURATION);
