@@ -1,0 +1,23 @@
+.tank {
+  width: 220px;
+  height: 400px;
+  position: absolute;
+  left: 210px;
+  top: 240px;
+}
+
+.tank:hover {
+  background-color: #00000055;
+  cursor: pointer;
+}
+
+.tank-timer {
+  background-color: #00000055;
+  padding: 8px 12px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  color: #fff;
+  font-size: 18px;
+  font-family: monospace;
+}
