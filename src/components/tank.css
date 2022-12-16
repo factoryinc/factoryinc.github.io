@@ -1,24 +1,32 @@
 .tank {
-  width: 208px;
-  height: 368px;
+  width: 214px;
+  height: 358px;
   position: absolute;
   left: 210px;
   top: 254px;
   padding: 8px;
 
-  transition: background-color 0.3s ease-out;
+  /* transition: background-color 1s ease-out; */
 }
 
 .tank:hover {
-  background-color: #00000022;
+  background-color: #001a0044;
   cursor: pointer;
-  box-shadow: 5px 5px 8px #00000066;
+  box-shadow: 3px 16px 8px #00000066;
 
-  transition: all 0.3s ease-out,;
+  transition: box-shadow 0.5s ease-out;
+}
+
+.tank.tank-is-building:hover {
+  background-color: red;
+  cursor: wait;
+  box-shadow: none;
+
+  transition: none;
 }
 
 .tank.tank-is-building {
-  background-color: #00000066;
+  background-color: #ff000066;
   cursor: pointer;
 
   transition: background-color 1s ease-out;
