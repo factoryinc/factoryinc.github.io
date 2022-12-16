@@ -6,3 +6,8 @@
   - Start 0:45 timer
   - Once timer gets to zero, add $1000 to capital
   - Tank goes back to initial state
+
+
+Nice to have:
+- Splash screen
+- Global timer gets to zero, play again splash

@@ -1,12 +1,6 @@
 import { useState, useEffect } from 'react';
+import secondsToTime from '../utils/secondsToTime';
 import './timer.css';
-
-const secondsToTime = (seconds) => {
-  const calculatedTime = new Date( null );
-  calculatedTime.setSeconds( seconds );
-
-  return calculatedTime.toISOString().substring(14, 19);
-}
 
 const Timer = ({initialSeconds}) => {
   const [seconds, setSeconds] = useState(initialSeconds);

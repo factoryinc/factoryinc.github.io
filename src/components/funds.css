@@ -1,4 +1,4 @@
-.money {
+.funds {
   background-color: #00000055;
   padding: 12px 20px;
   position: absolute;
@@ -7,4 +7,10 @@
   color: rgb(83, 176, 83);
   font-size: 32px;
   font-family: monospace;
+  text-shadow: 3px 3px 1px #000000;
+}
+
+.funds-negative {
+  color: #dd0000;
+  text-shadow: 1px 1px 1px #000000;
 }

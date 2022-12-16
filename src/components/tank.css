@@ -1,23 +1,54 @@
 .tank {
-  width: 220px;
-  height: 400px;
+  width: 208px;
+  height: 368px;
   position: absolute;
   left: 210px;
-  top: 240px;
+  top: 254px;
+  padding: 8px;
+
+  transition: background-color 0.3s ease-out;
 }
 
 .tank:hover {
-  background-color: #00000055;
+  background-color: #00000022;
   cursor: pointer;
+  box-shadow: 5px 5px 8px #00000066;
+
+  transition: all 0.3s ease-out,;
+}
+
+.tank.tank-is-building {
+  background-color: #00000066;
+  cursor: pointer;
+
+  transition: background-color 1s ease-out;
+  animation-name: color;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 .tank-timer {
+  display: none;
   background-color: #00000055;
-  padding: 8px 12px;
-  position: absolute;
   left: 0px;
   top: 0px;
   color: #fff;
   font-size: 18px;
   font-family: monospace;
+}
+
+.tank-is-building .tank-timer {
+  display: block;
+}
+
+@keyframes color {
+  0% {
+    background-color: #00000066;
+  }
+  50% {
+    background-color: #00440022;
+  }
+  100% {
+    background-color: #00000066;
+  }
 }
